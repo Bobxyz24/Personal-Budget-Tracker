@@ -1,0 +1,19 @@
+# budget_tracker.py
+
+budget = 0
+
+def add_income(amount):
+    global budget
+    budget += amount
+
+def add_expense(amount):
+    global budget
+    budget -= amount
+
+def view_budget():
+    print(f"Remaining budget: ${budget}")
+
+# Sample usage
+add_income(1000)
+add_expense(200)
+view_budget()
